@@ -1,8 +1,5 @@
 import DiectoryItem from "../directory-item/directory-item";
-
 import {DirectoryContainer} from './directory.styles.jsx';
-
-
 const categories =[
 {
     id: 1,
@@ -37,6 +34,8 @@ const categories =[
 ];
 
 const Directory = () => {
+
+
     return(
         <DirectoryContainer>
             {categories.map((category) => 
