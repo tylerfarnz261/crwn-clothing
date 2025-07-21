@@ -13,11 +13,18 @@ import { useSelector } from 'react-redux';
 import { selectCurrentUser } from '../../store/user/user.selector.js';
 
 import { selectIsCartOpen } from '../../store/cart/cart.selector.js';
+
+import {useDispatch} from 'react-redux';
+import { signOutStart } from '../../store/user/user.action.js';
+
 function Navigation() {
   
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen  = useSelector(selectIsCartOpen);
  
+  const dispatch = useDispatch();
+
+  const signOutUser = () => dispatch(signOutStart());
     return (
       <Fragment>
         <NavigationContainer > 
