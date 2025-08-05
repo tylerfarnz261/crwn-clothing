@@ -22,7 +22,7 @@ import {
 
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_GOOGLE_FIREBASE_KEY,
+  apiKey: process.env.GOOGLE_FIREBASE_KEY,
   authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
   projectId: 'crwn-clothing-db-98d4d',
   storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
